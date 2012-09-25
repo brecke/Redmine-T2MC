@@ -13,16 +13,24 @@ This script assumes you're using redmine 1.3 and the [knowledge base plugin](htt
 
 ### Usage
 
-You should be able to run the `converter.py` straight away. What it does is use django settings in order to leverage the django's ORM middleware and deal with models instead of raw sql.
+You should be able to run the `converter.py` straight away:
+
+```
+  python converter.py
+```
+
+What it does is use django settings in order to leverage the django's ORM middleware and deal with models instead of raw sql.
 
 The `app` folder must contain the `models.py` because django wants it that way. The `models.py` inside that folder is a result of the django's inspectdb feature. It goes like this:
 
+```
   django-admin.py startproject dumb_project
   cd dumb_project
   django-admin.py startapp app
   cd app
   python manage.py inspectdb > models.py
+```
   
-Then just move the `app` folder to the one `converter.py` is in (and don't care it it doesn't make sense).
+Then just move the `app` folder to the one `converter.py` is in (and don't care if it doesn't make sense).
 
 You may remove all classes from the `models.py` file except the ones you actually need: `WikiContents` and `KbArticles`.

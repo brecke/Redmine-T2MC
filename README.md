@@ -10,6 +10,7 @@ This script assumes you're using redmine 1.3 and the [knowledge base plugin](htt
 * You must have [pandoc](http://johnmacfarlane.net/pandoc/) installed (you may use homebrew it using mac os)
 * You must have python installed on your machine
 * You must have django installed (more on this later)
+* You should have the [redmine redcarpet formatter](https://github.com/alminium/redmine_redcarpet_formatter) plugin installed, so you can render the converted content afterwards
 
 ### Usage
 

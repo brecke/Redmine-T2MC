@@ -4,7 +4,7 @@ import subprocess
 import os
 import sys
 import djangosettings
-from nome.models import *
+from app.models import *
 
 # constants
 TEXTILE_DOCUMENT_FILEPATH = "doc.textile"

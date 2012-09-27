@@ -12,6 +12,12 @@ This script assumes you're using redmine 1.3 and the [knowledge base plugin](htt
 * You must have django installed (more on this later)
 * You should have the [redmine redcarpet formatter](https://github.com/alminium/redmine_redcarpet_formatter) plugin installed, so you can render the converted content afterwards
 
+To install django (and other possible dependencies):
+
+```
+pip install -r requirements.txt
+```
+
 ### Usage
 
 You should be able to run the `converter.py` straight away:

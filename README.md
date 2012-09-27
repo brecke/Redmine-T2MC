@@ -7,7 +7,7 @@ This is a small script I wrote for a particular situation I faced: I used redmin
 
 This script assumes you're using redmine 1.3 and the [knowledge base plugin](https://github.com/alexbevi/redmine_knowledgebase) (you may edit the script if you're not). Other dependencies:
 
-* You must have [pandoc](http://johnmacfarlane.net/pandoc/) installed (you may use homebrew it using mac os)
+* You must have [pandoc](http://johnmacfarlane.net/pandoc/) installed (you can `brew install haskell-platform` and then `cabal install pandoc` and you should be set)
 * You must have python installed on your machine
 * You must have django installed (more on this later)
 * You should have the [redmine redcarpet formatter](https://github.com/alminium/redmine_redcarpet_formatter) plugin installed, so you can render the converted content afterwards
